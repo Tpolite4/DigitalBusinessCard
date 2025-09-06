@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
 import ProfileCard from './components/ProfileCard';
-// import Content from './components/Content';
-// import Buttons from './components/Buttons';
+import Buttons from './components/Buttons';
+import Header from './components/Header';
+import Content from './components/Content';
 
 function App() {
   return (
     <div className='page'>
       <ProfileCard />
+      <Header />
+      <Buttons />
+      <Content />
     </div>
   );
 }

@@ -13,6 +13,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  width: 317px;
+  margin: auto;
+  padding: 15px;
+  background: #1a1a1a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page h2,
+p {
+  text-align: start;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -30,22 +47,45 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.profile {
+  width: 317px;
+  height: auto;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.buttons {
+  padding-top: 9px;
+  padding-right: 13px;
+  border-radius: 1px;
+  gap: 8px;
 }
+
+.email-img {
+  width: 3rem;
+  height: auto;
+  padding-right: 50px;
+}
+.linkedin-img {
+  width: 3rem;
+  height: auto;
+}
+
+.name {
+  margin-bottom: 5px;
+  font-size: 25px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.title {
+  display: flex !important;
+  justify-content: center !important;
+  font-size: 10px;
+  padding: -15px;
+  margin-top: 0;
+  color: orange;
+}
+
+/* Buttons */
 button:hover {
   border-color: #646cff;
 }
@@ -66,3 +106,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+} */
