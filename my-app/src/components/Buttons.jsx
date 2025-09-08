@@ -1,10 +1,11 @@
 import React from 'react';
 import Linkedin from '../assets/linkedin.png';
 import Email from '../assets/mail.png';
+import GitHub from '../assets/github.png';
 
-export default function Buttons() {
+export default function Footer() {
   return (
-    <div className='buttons'>
+    <div className='footer'>
       <a
         href='mailto:tpolite4@gmail.com'
         target='_blank'
@@ -18,6 +19,9 @@ export default function Buttons() {
         rel='noopener noreferrer'
       >
         <img src={Linkedin} alt='LinkedIn' className='linkedin-img' />
+      </a>
+      <a href='https://github.com/Tpolite4'>
+        <img src={GitHub} alt='Github'></img>
       </a>
     </div>
   );

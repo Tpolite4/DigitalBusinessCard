@@ -61,16 +61,6 @@ body {
   height: auto;
 }
 
-.email-img {
-  width: 2rem;
-  height: auto;
-  padding-right: 25px;
-}
-.linkedin-img {
-  width: 2rem;
-  height: auto;
-}
-
 .name {
   margin-top: 0px;
   margin-bottom: 5px;
@@ -88,12 +78,25 @@ body {
   color: orange;
 }
 
-/* Buttons */
-.buttons {
-  padding-top: 9px;
-  padding-right: 13px;
-  border-radius: 1px;
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
   gap: 8px;
+  background-color: #201f1f;
+  padding: 1px 0;
+  max-width: 400px;
+  width: 347px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.footer img {
+  width: 2rem;
+  height: auto;
+  margin-left: 15px;
+  padding-right: 30px;
 }
 
 button:hover {
@@ -130,9 +133,6 @@ button:focus-visible {
 } */
 
 /* Skills Styling */
-.skills {
-  display: flex;
-}
 
 .skills img {
   flex-direction: row;

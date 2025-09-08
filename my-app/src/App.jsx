@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import ProfileCard from './components/ProfileCard';
-import Buttons from './components/Buttons';
+import Footer from './components/Buttons';
 import Header from './components/Header';
 import Content from './components/Content';
 import Skills from './components/SkillsIcon';
@@ -13,8 +13,10 @@ function App() {
       <Header />
       <Skills />
       <Content />
-      <Buttons />
-
+      <div className='footer-wrapper'>
+        <div className='footer'></div>
+        <Footer />
+      </div>
     </div>
   );
 }
