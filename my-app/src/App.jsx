@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import ProfileCard from './components/ProfileCard';
-import Footer from './components/Buttons';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Content from './components/Content';
 import Skills from './components/SkillsIcon';

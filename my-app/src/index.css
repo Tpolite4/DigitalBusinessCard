@@ -4,7 +4,7 @@
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #a8b2c9;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,7 +23,7 @@
   max-width: 317px;
   min-height: 100vh;
   margin: auto;
-  padding: 15px;
+  padding: 15px 15px 0px;
   background: #1a1a1a;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -85,7 +85,7 @@ body {
   justify-content: center;
   gap: 8px;
   background-color: #201f1f;
-  padding: 1px 0;
+  padding: 1px 0px;
   max-width: 400px;
   width: 347px;
   border-bottom-left-radius: 10px;
@@ -97,6 +97,30 @@ body {
   height: auto;
   margin-left: 15px;
   padding-right: 30px;
+  cursor: pointer;
+}
+
+/* Jump animation */
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-8px);
+  } /* jump up */
+  50% {
+    transform: translateY(0);
+  } /* back down */
+  70% {
+    transform: translateY(-4px);
+  } /* little bounce */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.footer img:hover {
+  animation: jump 0.75s ease;
 }
 
 button:hover {
